@@ -59,6 +59,16 @@
       <div class="filterby-title">
         <div>Filter by</div>
         <a class="filter-viewall-link" href="javascript:void(0)">View all</a></div>
+        <!--Applied Filter Start-->
+        <div class="applied-filter-wrapper">
+          <div> <span>Data Science</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          <a class="clear-all-link" href="javascript:void(0)">Clear All</a> 
+        </div>
+        <!--Applied Filter Start-->
       <div class="filterby-content">
         <div class="filter-by-date">
           <div class="block">
@@ -320,14 +330,6 @@
     <div class="dashboard-wrapper">
       <div class="dashboard-container"> 
         
-        <!--Applied Filter Start-->
-        <div class="applied-filter-wrapper">
-          <div> <span>Data Science</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
-          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
-          <a class="clear-all-link" href="javascript:void(0)">Clear All</a> 
-        </div>
-        <!--Applied Filter Start--> 
-        
         <!--Main Tab Content Start-->
         <div class="tab-content"> 
           
@@ -346,7 +348,7 @@
                         <div class="title">Revenue</div>
                         <div class="title-value">
                           <div class="block">
-                            <div>3400</div>
+                            <div>3400 <span>54%</span></div>
                             <div class="progress">
                               <div class="progress-bar" style="width: 20%"></div>
                             </div>
@@ -362,7 +364,7 @@
                         <div class="title">Enrollments</div>
                         <div class="title-value">
                           <div class="block">
-                            <div>234</div>
+                            <div>234 <span>54%</span></div>
                             <div class="progress">
                               <div class="progress-bar" style="width: 20%"></div>
                             </div>
@@ -745,7 +747,7 @@
           <!-- Overview Section Start--> 
           
           <!-- Sales Section Start-->
-          <div id="sales-section" class="section-wrapper tab-pane fade">
+          <div id="sales-section" class="tab-pane fade">
             <div class="sales-tabs-wrapper">
               <ul class="nav nav-tabs">
                 <li class="first active"><a data-toggle="tab" href="#call-centre-section"><i></i>Call center</a></li>
@@ -754,9 +756,9 @@
               </ul>
             </div>
             <div class="tab-content">
-              <div class="inr-lakh">* Revenue in (INR Lakhs) </div>
               <div id="call-centre-section" class=" tab-pane fade in active">
                 <div class="block-wrapper2">
+                  <!--<div class="inr-lakh">* Revenue in (INR Lakhs) </div>-->
                   <div class="block-tabs-wrapper">
                     <div class="block-title">Call Center</div>
                     <div>
@@ -796,7 +798,7 @@
                           <ul>
                             <li class="first">
                               <div class="tabs-block">
-                                <div id="chart4" style="min-width:100%; height: 300px;"></div>
+                                <div id="chart4" style="min-width:100%; height: 326px;"></div>
                               </div>
                             </li>
                             <li class="second">
@@ -870,7 +872,7 @@
                             <ul>
                               <li class="first">
                                 <div class="tabs-block">
-                                  <div id="chart15" style="min-width:100%; height: 340px;"></div>
+                                  <div id="chart15" style="min-width:100%; height: 300px;"></div>
                                 </div>
                               </li>
                             </ul>
@@ -884,7 +886,7 @@
                             <ul>
                               <li class="first">
                                 <div class="tabs-block">
-                                  <div id="chart16" style="min-width:100%; height: 340px;"></div>
+                                  <div id="chart16" style="min-width:100%; height: 300px;"></div>
                                 </div>
                               </li>
                             </ul>
@@ -913,7 +915,7 @@
                       </div>
                     </div>
                     <div class="block-left">
-                      <div id="chart5" style="min-width:100%; height:350px;"></div>
+                      <div id="chart5" style="min-width:100%; height:300px;"></div>
                     </div>
                     <div class="view-detail-link"><a href="listing.html">Know more</a></div>
                   </div>
@@ -1471,7 +1473,7 @@
                   </div>
                 </div>
                 <div id="chart21" style="min-width:100%; height:260px;"></div>
-                <div class="view-detail-link"><a href="listing.html">Know more<i><img src="images/know-more-arrow.png"></i></a></div>
+                <div class="view-detail-link"><a href="listing.html">Know more</a></div>
               </div>
             </div>
           </div>
@@ -1706,7 +1708,7 @@
                 jQuery(this).toggleClass('active');
             });
          
-             $(window).scroll(function() {    
+             /*$(window).scroll(function() {    
                  var scroll = $(window).scrollTop();
          
                   //>=, not <=
@@ -1714,7 +1716,7 @@
                      //filter-fixed, not filter-fixed - caps H
                      $(".all-content-wrapper").addClass("filter-fixed");
                  }
-             }); //missing );
+             }); //missing );*/
          
          
          
@@ -2133,7 +2135,7 @@
 
          Highcharts.chart('chart22', {
              chart: {
-                 type: 'spline',
+                 type: 'line',
                  style: {
                      fontFamily: 'sourcesanslight',
                      fontSize:14
@@ -3043,6 +3045,7 @@
                  data: [149, 79, 106, 129]
          
              }, {
+                type: 'spline',
                  name: 'Actual',
                  data: [83, 78, 98, 93]
          
