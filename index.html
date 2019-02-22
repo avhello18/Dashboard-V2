@@ -1660,85 +1660,7 @@
          });
          
          
-         Highcharts.chart('chart19', {
-             chart: {
-                 plotBackgroundColor: null,
-                 plotBorderWidth: null,
-                 plotShadow: false,
-                 type: 'pie',
-                 style: {
-                     fontFamily: 'latobold',
-                     fontSize:14
-                 },
-                 options3d: {
-                    enabled: false,
-                    alpha: 45
-                }
-             },
-             title: {
-                 text: ''
-             },
-             credits: {
-                 enabled: false
-             },
-             tooltip: {
-                 pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
-             },
-             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
-             
-             plotOptions: {
-                 pie: {
-                     size:'100%',
-                     innerSize:150,
-                     depth:0,
-                     allowPointSelect: true,
-                     cursor: 'pointer',
-                     dataLabels: {
-                         enabled: false,
-                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                         style: {
-                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                         }
-                     },
-                     showInLegend: false,
-                     
-                 }
-             },
-         
-             legend: {
-                    layout: 'horizontal',
-                     align: 'center',
-                     verticalAlign: 'bottom',
-                     x:0,
-                     y:0,
-                     floating: true,
-                     borderWidth: 0,
-                     
-                 },
-             series: [{
-                 name: 'Revenue',
-                 colorByPoint: true,
-                 data: [{
-                     name: 'Wrong Number',
-                     y: 61,
-                     sliced: true,
-                     selected: true,
-                     myData : 10
-                 }, {
-                     name: 'Auto Retired',
-                     y: 11,
-                     myData : 5
-                 }, {
-                     name: 'Not Enquired',
-                     y: 10,
-                     myData : 2
-                 }, {
-                     name: 'Not Eligible',
-                     y: 10,
-                     myData : 7
-                 }]
-             }]
-         });    
+
          
          Highcharts.chart('chart18', {
              chart: {
@@ -1827,6 +1749,88 @@
                      myData : 2
                  },{
                      name: 'new lead',
+                     y: 10,
+                     myData : 2
+                 }]
+             }]
+         });
+         
+
+          Highcharts.chart('chart19', {
+             chart: {
+                 plotBackgroundColor: null,
+                 plotBorderWidth: null,
+                 plotShadow: false,
+                 type: 'pie',
+                 style: {
+                     fontFamily: 'latobold',
+                     fontSize:14
+                 },
+                 options3d: {
+                    enabled: false,
+                    alpha: 45
+                }
+             },
+             title: {
+                 text: ''
+             },
+             credits: {
+                 enabled: false
+             },
+             tooltip: {
+                 pointFormat: '{series.name}: <b>{point.y}</b> <br/> Enrollments:<b>{point.myData}</b>'
+             },
+             colors: ['#1a237e', '#568bdb', '#283593', '#3949ab'],    
+             
+             plotOptions: {
+                 pie: {
+                     size:'100%',
+                     innerSize:150,
+                     depth:0,
+                     allowPointSelect: true,
+                     cursor: 'pointer',
+                     dataLabels: {
+                         enabled: false,
+                         format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                         style: {
+                             color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                         }
+                     },
+                     showInLegend: true,
+                     
+                 }
+             },
+         
+             legend: {
+                    layout: 'vertical',
+                     align: 'left',
+                     verticalAlign: 'bottom',
+                     floating:false,
+                     x:0,
+                     y:10,
+                     floating: true,
+                     borderWidth: 0,
+                     
+                 },
+             series: [{
+                 name: 'Revenue',
+                 colorByPoint: true,
+                 data: [{
+                     name: 'Wrong Number',
+                     y: 61,
+                     sliced: true,
+                     selected: true,
+                     myData : 10
+                 }, {
+                     name: 'Auto Retired',
+                     y: 11,
+                     myData : 5
+                 }, {
+                     name: 'Not Enquired',
+                     y: 10,
+                     myData : 2
+                 },{
+                     name: 'Not Eligible',
                      y: 10,
                      myData : 2
                  }]
