@@ -74,12 +74,17 @@
         
         <!--Applied Filter Start-->
         <div class="applied-filter-wrapper">
-          <div> <span>Data Science</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
-          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
-          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
-          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
-          <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
-          <a class="clear-all-link" href="javascript:void(0)">Clear All</a> 
+          <div>
+            <div> <span>Data Science</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+            <div> <span>Digital Marketing</span> <a href="javascript:void(0)" class="remove-icon"></a> </div>
+          </div>
+          <div>
+            <button>Apply</button>
+            <a class="clear-all-link" href="javascript:void(0)">Clear All</a> 
+          </div>
         </div>
         <!--Applied Filter Start-->
       <div class="filterby-content">
@@ -365,7 +370,7 @@
                             <div class="progress">
                               <div class="progress-bar" style="width: 20%"></div>
                             </div>
-                            <div>Actual</div>
+                            <div>Achieved</div>
                           </div>
                           <div class="block">
                             <div>6789</div>
@@ -1172,8 +1177,8 @@
                   </ul>
                 </div>
                 <div class="block-right">
-                  <div class="chart-title">Leads Funnel View</div>
-                  <div id="chart17" style="min-width:100%; height:320px;"></div>
+                  <div class="chart-title">Leads Funnel</div>
+                  <div id="chart17" style="min-width:100%; height:370px;"></div>
                   <div class="view-detail-link"><a href="listing.html">Know more</a></div>
                 </div>
               </div>
@@ -1587,7 +1592,7 @@
                  plotShadow: false,
                  type: 'pie',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -1608,13 +1613,13 @@
                      allowPointSelect: true,
                      cursor: 'pointer',
                      dataLabels: {
-                         enabled: true,
+                         enabled: false,
                          format: '<b>{point.name}</b>: {point.percentage:.1f} %',
                          style: {
                              color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
                          }
                      },
-                     showInLegend: true,
+                     showInLegend: false,
                      
                  }
              },
@@ -1662,7 +1667,7 @@
                  plotShadow: false,
                  type: 'pie',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  },
                  options3d: {
@@ -1742,7 +1747,7 @@
                  plotShadow: false,
                  type: 'pie',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  },
                  options3d: {
@@ -1835,7 +1840,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -1902,7 +1907,7 @@
              chart: {
                  type: 'line',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -1968,7 +1973,7 @@
              chart: {
                  type: 'spline',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2035,7 +2040,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2125,7 +2130,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2192,7 +2197,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2256,7 +2261,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2319,7 +2324,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2378,7 +2383,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2444,7 +2449,7 @@
                  enabled: false
              },
              style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  },
              colors: ['#568bdb', '#568bdb', '#3949ab', '#315282' ,'#9fa8da','#47549d'],
@@ -2489,7 +2494,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2548,7 +2553,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2607,7 +2612,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2677,7 +2682,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2759,7 +2764,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2822,7 +2827,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2879,7 +2884,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
@@ -2943,7 +2948,7 @@
              chart: {
                  type: 'column',
                  style: {
-                     fontFamily: 'sourcesanslight',
+                     fontFamily: 'latobold',
                      fontSize:14
                  }
              },
